@@ -19,7 +19,6 @@ def most_common_word(text):
 
     sorted_dict = sorted( words_info.items(), key = lambda x: x[1], reverse = True)
     return sorted_dict.pop(0)[0]
-    pass # тут ваш код
 
 print(most_common_word("кот кот собака"))
 assert most_common_word("кот кот собака") == "кот", "Самое частое слово — кот"
